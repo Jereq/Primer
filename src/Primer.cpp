@@ -40,7 +40,7 @@ bool Primer::runOnce()
 		num = MAX_PRIME_NUM;
 	}
 
-	long prime = calculatePrime(num - 1);
+	unsigned long prime = calculatePrime(num - 1);
 	if (prime == 0)
 	{
 		std::cout << "Prime to large, try smaller number" << std::endl;
@@ -61,7 +61,7 @@ long Primer::readLong()
 	return std::stoul(input);
 }
 
-long Primer::calculatePrime(unsigned long num)
+unsigned long Primer::calculatePrime(unsigned long num)
 {
 	if (num > MAX_PRIME_NUM)
 	{

@@ -14,7 +14,7 @@ private:
 
 	bool runOnce();
 	long readLong();
-	long calculatePrime(unsigned long num);
+	unsigned long calculatePrime(unsigned long num);
 	void calculateNextPrime(unsigned long num);
 	void printPrime(unsigned long num, unsigned long prime, double rate);
 	unsigned long nextPrime();
